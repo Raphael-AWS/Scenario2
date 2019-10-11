@@ -9,10 +9,7 @@ terraform {
 #setup Provider
 provider "aws" {
   region = "${var.aws_region}"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
 }
-
 #VPC
 resource "aws_vpc" "vpc_tuto" {
   cidr_block = "${var.vpc_cidr}"
